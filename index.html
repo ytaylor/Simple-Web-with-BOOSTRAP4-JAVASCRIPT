@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gimnasio Online</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+   <link href="css/ejercicios.css" rel="stylesheet">
+
+
+  </head>
+
+  <body onload="mostrarEjercicios()">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Gimnasio Online</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="tabla_entrenamiento.html">Tabla de Entrenamiento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+          <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('https://www.menshealth.es/media/cache/big/upload/images/article/5612/article-como-buscar-gimnasio-perfecto-5975de4003c5d.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Maquinaria de ultima generación</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('https://www.cnmontjuic.cat/wp-content/uploads/DSC00173.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Amplias instalaciones</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('https://news.mondoiberica.com.es/wp-content/uploads/2016/10/almansaart.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Instalaciones al aire libre</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+
+
+
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+    <h5>Repeticiones</h5>
+    <input type="text" placeholder="Inserte el número de repeticiones" id="repeticiones" required>
+    <button onclick="agregar_repeticiones()" type="button" class="btn">Aceptar</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+  </form>
+</div>
+
+
+    <div class="container">
+     
+      <!-- Portfolio Section -->
+
+      <hr>
+
+      <h2>Listados de Ejercicios</h2>
+      <div class="row" id="listadoEjercicios">
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+          <a href="tabla_entrenamiento.html" class="btn btn-secondary btn-lg" role="button">Ver lista de ejercicios de entrenamiento</a>
+
+          <hr>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white"> Gimnasio Online 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+
+  </body>
+
+</html>
